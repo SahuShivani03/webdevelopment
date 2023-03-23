@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom table</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <h1> complete javascript</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>user details</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, magnam.</p>
+            <button id="show" class="btn btn-dark" onclick="showTable()"> show table</button>
+            <button id="hide" disabled class="btn btn-dark" onclick="hideTable()"> hide table</button>
+        </div>
+    </div>
+</div>
+<div id="tableDiv" style="display:none">
+
+<div class="col">
+    <table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>
+                    first name
+                </th>
+                <th> last name</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    </div>
+</div>
+
+<div class="row my-5" id="radio" style="display: none">
+    <div class="col-4">
+      <input type="radio" name="gender" onclick="fnFilter('all')" />ALL
+    </div>
+    <div class="col-4">
+      <input type="radio" name="gender" onclick="fnFilter('male')" />MALE
+    </div>
+    <div class="col-4">
+      <input
+        type="radio"
+        name="gender"
+        onclick="fnFilter('female')"
+      />FEMALE
+    </div>
+  </div>
+
+
+
+
+
+    <!-- <script src=".\api.js"> </script> -->
+    <!-- <script src="domtable.js"></script> -->
+    <script src="apipromise.js"></script>
+        <!-- <script src="this.js"></script> -->
+
+</body>
+</html>
